@@ -1,0 +1,672 @@
+<!doctype html>
+<head>
+ <title>Presentation Design Agency | PowerPoint Design - Slidor</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="css/style.css" rel="stylesheet">
+ <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    body{
+        background: #fff!important;
+    }
+    header , footer {
+  background-color: #120d21!important;
+    }
+    input.btn.btn-complete {
+    display: none;
+}
+
+a.btn.btn-next.first {
+    /* width: 50%; */
+    text-align: center;
+    border: 1px solid;
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+}
+
+label[for^="vehicle"] {position: relative;}
+[for^="vehicle"] input {
+     position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+[for^="vehicle"] span {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+}
+
+label[for="vehicle1"] {
+    margin-top: 25px;
+}
+[for^="vehicle"] input:checked + span {
+    border: 2px solid #764242;
+}
+.terms_condition input {
+    width: auto;
+    display: inline;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.terms_condition {
+    margin: 15px 0px;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+.form-step.about_website label span {
+    display: inline-block;
+    width: auto;
+    max-width: auto;
+    padding: 10px;
+  
+}
+
+.form-step.about_website label {
+    width: d;
+    width: auto;
+    display: inline-block;
+}
+.ml-auto {
+    margin-left: auto;
+}
+input.phone_num::-webkit-outer-spin-button,
+input.phone_num::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.multi_step a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid;
+    width: 33%;
+    margin: 0 5px;
+}
+.your_bussiness .btn-group {
+    justify-content: flex-end;
+}
+.experience-item label {
+    width: 49%;
+}
+.experience-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-step h3 {
+    margin-bottom: 30px;
+}
+
+.form-step .btn-group {
+    margin-top: 30px;
+}
+.form-step.account_form.active input {
+    padding:0.6rem;
+    margin-top:5px;
+}
+    
+
+.account_form label {
+    width: 48%;
+}
+
+.form-step.account_form.active {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.account_form h3 {
+    width: 100%;
+}
+
+.account_form .btn-group {
+    width: 100%;
+}
+section.home-header.start_guide_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 20px;
+}
+
+section.home-header.start_guide_logo a {
+    margin: 0;
+    font-weight: 600;
+   text-decoration: none;
+}
+
+
+
+
+
+
+/* Form */
+
+.form {
+    background-color: white;
+    width: clamp(550px, 37%, 430px);
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.input-group {
+    margin: 0.5rem 0;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+    transform-origin: top;
+    animation: animate .5s;
+}
+
+
+/* Button */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    width: min-content;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.add-experience{
+    display: none;
+}
+.btn-next {
+    background-color: var(--blue-color);
+    color: white;
+    float: right;
+}
+
+.btn-prev {
+    background-color: #777;
+    color: #fff;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--blue-color);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Prefixes */
+
+.input-box {
+    display: flex;
+    align-items: center;
+    /* max-width: 300px; */
+    background: #fff;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.input-box .prefix {
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(117, 114, 114);
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+}
+
+.input-box:focus-within {
+    border-color: #777;
+}
+
+/* End Prefixes */
+
+
+/* Progress bar */
+
+.progress-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin-bottom: 30px;
+}
+
+.progress-bar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--blue-color);
+    width: 0;
+    transition: .5s;
+}
+
+.progress-step {
+    width: 35px;
+    height: 35px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.20rem);
+    font-size: 0.85rem;
+    color: black !important;
+}
+
+.progress-step.active {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+/* End Progress bar */
+
+/* Add Experience Btn */
+
+
+.add-exp-btn {
+    color: #577d4c;
+    border-right: 2px solid #577d4c;
+    border-bottom: 2px solid #577d4c;
+    padding: 0 10px 10px 0;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+
+.add-experience {
+    margin-bottom: 20px;
+}
+
+.multi_step {
+    margin-top: 30px;
+}
+
+</style>
+<body>
+
+    <section class="home-header start_guide_logo">
+        <h5 class="logo-text"> <a href="https://flamboyant-wright.103-15-28-226.plesk.page/homepage.html"> Webzolution </a></h5>
+        <a href="/homepage.html"> IM JUST BROWSING </a>
+    </section>
+    
+  
+
+  <section class="multi_step">
+    <form action="data.php" method="post" class="form">
+        <!-- Progress Bar 
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step active" data-title="Personal"></div>
+            <div class="progress-step" data-title="Contact "></div>
+            <div class="progress-step" data-title="Experiences"></div>
+            <div class="progress-step" data-title="Links"></div>
+        </div> -->
+
+        <!-- Steps -->
+        <div class="form-step your_bussiness active">
+            <h3>What stage are you at with your business?</h3>
+            <label for="vehicle1">  
+                <input type="radio" id="vehicle1" name="vehicle21" value="Bike" required>
+                <span>Starting a new business</span>
+            </label>
+                
+                <label for="vehicle2">
+                    <input type="radio" id="vehicle2" name="vehicle22" value="Car" required>
+                     <span>Growing an existing business</span>
+                    </label>
+              <div class="btn-group">
+                <a class="btn btn-next first">Next</a>
+            </div>
+        </div>
+
+        <div class="form-step ">
+            <h3>Where are you now in your website development process?</h3>
+            <label for="vehicle1">  
+                <input type="checkbox" id="vehicle6" name="vehicle1" value="Bike">
+                <span>Deciding on DIY or to be done by agency</span>
+            </label>
+                
+                <label for="vehicle2">
+                    <input type="checkbox" id="vehicle7" name="vehicle2" value="Car">
+                     <span>Picking a service provider</span>
+                    </label>
+                
+                <label for="vehicle3"> 
+                    <input type="checkbox" id="vehicle8" name="vehicle3" value="Boat"> 
+                    <span>Writing content
+                </span></label>
+                
+                <label for="vehicle4">  
+                    <input type="checkbox" id="vehicle9" name="vehicle4" value="Car">
+                    <span>Planning to redesign or replace existing website
+                </span></label>
+
+          
+            <div class="btn-group">
+                <a class="btn btn-prev">Previous</a>
+                <a class="btn btn-next">Skip</a>
+                <a class="btn btn-next">Next</a>
+            </div>
+        </div>
+
+
+
+        <div class="form-step about_website">
+            <h3> What is your website about? </h3>
+            <label for="vehicle1"> 
+                 <input type="checkbox" id="vehicle11" name="vehicle1" value="Bike">
+                 <span>Technology</span>
+                </label>
+                
+                <label for="vehicle2">
+                    <input type="checkbox" id="vehicle12" name="vehicle2" value="Car"> 
+                    <span>Music</span>
+                </label>
+                
+                <label for="vehicle3">
+                     <input type="checkbox" id="vehicle13" name="vehicle3" value="Boat"> 
+                     <span>Education</span>
+                    </label>
+                
+                <label for="vehicle4">  
+                    <input type="checkbox" id="vehicle14" name="vehicle4" value="Car">
+                    <span>Consulting</span>
+                </label>
+               
+                <label for="vehicle5">
+                     <input type="checkbox" id="vehicle115" name="vehicle5" value="Boat">
+                     <span>Interior design</span>
+                    </label>
+
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle114" name="vehicle4" value="Car">
+                        <span>Architecture</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle214" name="vehicle4" value="Car">
+                        <span>Photography</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle314" name="vehicle4" value="Car">
+                        <span>Jewellery</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle414" name="vehicle4" value="Car">
+                        <span>Fashion</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle514" name="vehicle4" value="Car">
+                        <span>Art</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle614" name="vehicle4" value="Car">
+                        <span>Fitness</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle714" name="vehicle4" value="Car">
+                        <span>Restaurant</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle814" name="vehicle4" value="Car">
+                        <span>News or Magazine</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle914" name="vehicle4" value="Car">
+                        <span>Gaming</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle224" name="vehicle4" value="Car">
+                        <span>NGO</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Others</span>
+                    </label>
+                   
+
+
+            <div class="btn-group">
+                <a class="btn btn-prev">Previous</a>
+                <a class="btn btn-next">Skip</a>
+                <a class="btn btn-next">Next</a>
+            </div>
+        </div>
+      
+      
+        <div class="form-step">
+            <h3>What are your top goals?</h3>
+            <div class="experiences-group">
+                <div class="experience-item">
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Collect donations</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Sell memberships </span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Sell products  </span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Sell services</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Showcase work/ expertise</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Promote a physical business</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Promote event(s)</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Get appointments</span>
+                    </label>
+                    <label for="vehicle4">  
+                        <input type="checkbox" id="vehicle254" name="vehicle4" value="Car">
+                        <span>Publish blog / articles</span>
+                    </label>
+                </div>
+            </div>
+            <div class="add-experience">
+                <a class="add-exp-btn"> + Add Experience</a>
+            </div> 
+            <div class="btn-group">
+                <a class="btn btn-prev">Previous</a>
+                <a class="btn btn-next">Skip</a>
+                <a class="btn btn-next">Next</a>
+            </div>
+        </div>
+        <div class="form-step account_form">
+            <h3>Create Your Account</h3>
+              
+            <label> First name <input type="text" id="vehicle241" name="vehicle241">  </label>
+            <label> Last name <input type="text" id="vehicle121" name="vehicle121"> </label>
+            <label> Email <input type="email" id="vehicle127" name="vehicle127"> </label>
+            <label> Phone no. <input type="number" id="vehicle141" name="vehicle141" class="phone_num" > </label>
+            <label> Position <input type="text" id="vehicle151" name="vehicle151" > </label>
+            <label> Company name <input type="text" id="vehicle161" name="vehicle161"> </label>
+            <label> Password <input type="password" id="vehicle171" name="vehicle171" > </label>
+            <label> Confirm password <input type="password" id="vehicle181" name="vehicle181"> </label>
+            
+            <div class="terms_condition"><input  type="checkbox" id="vehicle1" name="vehicle21"  placeholder="Confirm password"> Agree to our Terms of Service and have read and understood the Privacy Policy.</div>
+
+         
+            <div class="btn-group">
+                <a class="btn btn-prev">Previous</a>
+                <input type="submit" value="Complete" name="complete" class="btn btn-complete">
+                <a href="/account/webzolution.html" class="btn">Finish</a>
+            </div>
+        </div>
+    </form>
+  </section>
+
+
+ <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.min.js">
+  </script>
+
+ <script>
+ const prevBtns = document.querySelectorAll(".btn-prev");
+const nextBtns = document.querySelectorAll(".btn-next");
+const progress = document.getElementById("progress");
+const formSteps = document.querySelectorAll(".form-step");
+const progressSteps = document.querySelectorAll(".progress-step");
+const addExperienceBtn = document.querySelector(".add-exp-btn");
+const experiencesGroup = document.querySelector(".experiences-group");
+const btnComplete = document.querySelector(".btn-complete");
+btnComplete.addEventListener("click", () => {
+    document.getElementsByTagName('form').submit
+})
+let formStepsNum = 0;
+let experienceNum = 1;
+
+addExperienceBtn.addEventListener("click", () => {
+    experienceNum++;
+    let text = `
+        <hr>
+    <div class='experience-item'>
+        <div class='input-group' >
+        <label for='title'>Company name</label>
+        <input type='text' name='title[]' id='title'>
+    </div>
+    <div class='input-group'>
+        <label for='start-date'>Start date</label>
+        <input type='date' name='start-date[]' id='start-date'>
+    </div>
+    <div class='input-group'>
+        <label for='end-date'>End date</label>
+        <input type='date' name='nd-date[]' id='end-date'>
+    </div>
+    <div class='input-group'>
+        <label for='job-description'>Description</label>
+        <textarea name='job-description[]' id='job-description' cols='42' rows='6'></textarea>
+    </div>
+</div > `
+    experiencesGroup.insertAdjacentHTML('beforeend', text);
+})
+
+function updateFormSteps() {
+
+    formSteps.forEach(formStep => {
+        formStep.classList.contains("active") &&
+            formStep.classList.remove("active");
+    })
+    formSteps[formStepsNum].classList.add("active");
+}
+
+function updateProgressBar() {
+    progressSteps.forEach((progressStep, idx) => {
+        if (idx < formStepsNum + 1) {
+            progressStep.classList.add("active");
+        } else {
+            progressStep.classList.remove("active");
+        }
+    })
+
+    const progressActive = document.querySelectorAll(".progress-step.active");
+    progress.style.width = ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + '%';
+}
+
+
+nextBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+        formStepsNum++;
+        updateFormSteps();
+        updateProgressBar();
+        console.log("kk")
+    })
+})
+
+
+prevBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+        formStepsNum--;
+        updateFormSteps();
+        updateProgressBar();
+        console.log("kk")
+    })
+})
+
+ </script>
+
+</body>
+ </html>    

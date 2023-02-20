@@ -1,0 +1,314 @@
+<!doctype html>
+<head>
+ <title>Presentation Design Agency | PowerPoint Design - Slidor</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="../css/style.css" rel="stylesheet">
+ <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<style>
+    .admin_page .box-layout .row {
+    background: transparent;
+    padding: 0;
+}
+.custom_calendar input {
+    width: auto;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <aside>
+        <div class="sidebar-brand custom-flex">
+            <a href="https://infysupport.infyom.com" class="pl-2 text-wrap text-break w-75">Webzolution</a>
+            <a href="" class="mobile_close"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="sidebar-brand sidebar-brand-sm">
+            <div class="d-flex justify-content-center align-items-center h-100 w-100">
+                <a href="https://infysupport.infyom.com" class="small-sidebar-text">
+                    W
+                </a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/admin/admin-page.html" class="active_ac"><i class="fa-sharp fa-solid fa-house"></i><span>Dashboard</span></a></li>
+            <li><a href="/admin/all-orders.html"><i class="fa-solid fa-bars-progress"></i><span>Orders</span></a></li>
+            <li><a href="/admin/all-tickets.html"><i class="fa-solid fa-envelopes-bulk"></i><span>Support tickets</span></a></li>
+             <li><a href="/admin/all-users.html"><i class="fa-solid fa-user"></i><span>User</span></a></li>
+           <li><a href="/admin/all-products.html"><i class="fa-solid fa-tag"></i><span>Products</span></a></li>
+            <li><a href="/account/my-info.html"><i class="fa-solid fa-gear"></i><span>My account</span></a></li>
+        </ul>
+    </aside>
+</div>
+
+
+         <nav class="top_nav">
+            <div class="inner">
+                <div class="left"> <i class="fa-solid fa-bars toggle_sidebar"></i></div>
+                <div class="right">
+               <a href=""><i class="fa fa-circle-info"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <span class="dropdown">
+                  <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-bell"></i>
+                    </a>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">
+                          <span class="">6 Notifications</span> 
+                          <a href="#" id="readAllNotification" class="text-decoration-none">Mark All As Read</a>
+                  </div>
+                  <ul>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                  </ul>
+                  </div>
+              </span>
+            </div>
+         </div>
+        </nav>
+
+
+ <section class="body-part main_container">
+  <div class="container px-0 admin_page">
+        <div class="row box-layout mb-4">
+        <div class="col-lg-12">
+            <div class="d-flex justify-space-between dash_head">
+            <h4>Order report </h4>
+            <button class="btn btn-primary"><a href="/admin/all-orders.html" style="color:#fff;">See all Orders</a></button>
+        </div>
+            <div class="row">
+            <div class="col-md-4">
+            <h6 class="mb-3">Date Range</h6>
+            <select class="form-control">
+                <option> 7 days </option>
+                <option> 30 days </option>
+                <option> 3 months </option>
+                <option> 1 year</option>
+            </select>
+           </div>
+           <div class="col-md-8 custom_calendar">
+             <h6 class="mb-3">Custom Range</h6>
+             <label for="from">From</label>
+                <input type="text" id="from" name="from" class="form-control" autocomplete="off">
+                <label for="to">to</label>
+                <input type="text" id="to" name="to" class="form-control" autocomplete="off">
+           </div>
+        </div>
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <ul class="stats">
+                        <li><span>$31,075.00</span>gross sales in this period</li>
+                        <li><span>$1,035.83</span>average gross daily sales</li>
+                        <li><span>9</span>Orders placed</li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <canvas id="bar-chart" width="800" height="450"></canvas>
+                </div>
+            </div>
+        </div>
+      
+        </div>
+
+        <div class="row ">
+            <div class="col-lg-6 ticket_table">
+                <div class="box-layout pt-3 px-4 pb-4">
+                <div class="d-flex justify-space-between dash_head">
+                    <h4> Latest support tickets </h4>
+                    <button class="btn btn-primary"><a href="/admin/all-tickets.html" style="color:#fff;">See all Tickets</a></button>
+                </div>
+                
+                <div>
+                    
+                <table class="table">
+                <tr>
+                    <td> <b>Last Update </b>  </td>
+                    <td> <b>Subject</b> </td>
+                </tr>
+                <tr>
+                    <td> June 26, 2021  21:00 </td>
+                    <td> Lorem Ipsum is simply dummy text </td>
+                </tr>
+                <tr>
+                    <td> June 26, 2021  21:00 </td>
+                    <td> Lorem Ipsum is simply dummy text </td>
+                </tr>
+                <tr>
+                    <td> June 26, 2021  21:00 </td>
+                    <td> Lorem Ipsum is simply dummy text </td>
+                </tr>
+               </table>
+              
+            </div>
+        </div>
+            </div>
+            <div class="col-lg-6 ticket_table">
+                <div class="box-layout pt-3 px-4 pb-4">
+                <div class="d-flex justify-space-between dash_head">
+                    <h4> Latest Users </h4>
+                    <button class="btn btn-primary"><a href="/admin/all-users.html" style="color:#fff;">See all Users</a></button>
+                </div>
+                
+                <div>
+                    
+                <table class="table">
+                <tr>
+                    <td> <b>Created </b>  </td>
+                    <td> <b>Name</b> </td>
+                    <td> <b>Company Name</b> </td>
+                </tr>
+                <tr>
+                    <td> June 26, 2021  21:00 </td>
+                    <td> Jhone Doe </td>
+                    <td> Webzolution </td>
+                </tr>
+                <tr>
+                    <td> June 26, 2021  21:00 </td>
+                    <td> Jhone Doe </td>
+                    <td> Webzolution </td>
+                </tr>
+                <tr>
+                    <td> June 26, 2021  21:00 </td>
+                    <td> Jhone Doe </td>
+                    <td> Webzolution </td>
+                </tr>
+               </table>
+              
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+<script>
+
+$( function() {
+    var dateFormat = "mm/dd/yy",
+      from = $( "#from" )
+        .datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 1
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( "#to" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 1
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+  } );
+
+
+$(".toggle_sidebar").click(function(){
+    event.preventDefault();
+  $('body').toggleClass("active");
+});
+
+$(".mobile_close").click(function(){
+    event.preventDefault();
+  $('body').removeClass("active");
+});
+
+
+// Bar chart
+new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+       datasets: [{
+           label: 'Order No',
+           borderColor: 'rgb(255, 99, 132)',
+           backgroundColor: 'rgba(255, 99, 132, 0.2)',
+           data: [15, 20, 30, 40],
+           order: 2,
+
+       }, {
+           label: 'Revenue',
+           data: [10, 30, 70, 10],
+           type: 'line',
+           order: 1,
+           fill: false,
+          borderColor: 'rgba(255, 99, 132, 0.2)',
+          unitPrefix: "$",
+       }],
+       labels: ["21 June", "22 June", "23 June", "24 June"],
+   },
+    options: {
+    
+    scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        },
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Orders & Revenue'
+      }
+    }
+});
+</script>
+
+</body>
+</html>

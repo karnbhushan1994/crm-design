@@ -1,0 +1,465 @@
+<!doctype html>
+<head>
+ <title>Presentation Design Agency | PowerPoint Design - Slidor</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="../css/style.css" rel="stylesheet">
+ <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    body{
+        background: #fff!important;
+    }
+    header , footer {
+  background-color: #120d21!important;
+    }
+    .header-left {
+        width:100%;
+        left:0;
+        height: 56px;
+        background:#f0f0f0;
+        justify-content: space-between;
+        z-index: 3;
+    }
+    .header-left > div {
+        flex-basis: 50%!important;
+    }
+    .support-ticket .side-main-menu {
+        top:56px;
+    }
+    .header-left .head-bar > div i {
+        border:none;
+    }
+    .header-left .head-bar i {
+      padding:19px;
+      color:#ada7a7;
+     }
+    .header-left .head-bar {
+        justify-content: flex-end;
+    }
+    .container {
+        max-width: 1110px;
+    }
+    .support-ticket .side-menu-open {
+        width:200px !important;
+        z-index: 3;
+   }
+   .body-part {
+    width:calc(100% - 56px);
+    margin-left:56px;
+    padding-bottom: 70px;
+   }
+   .support-ticket {
+    max-width:1440px;
+   }
+   #list-messages ul li:first-child {
+    padding:0px 30px 50px 0;
+}
+.support-ticket {
+    padding:25px 0px;
+    overflow: hidden;
+}
+.customer p{
+    bottom:0;
+    margin-bottom:0;
+   }
+
+
+
+</style>
+<body>
+
+    <section class="support-ticket">
+        <div class="header-left">
+                 
+            <div class="customer">
+                <i class="fa-solid fa-bars"></i>
+                <p style="font-size:14px;font-weight:700;color:#0065F2;"><a href="/homepage.html">Webzolution</a></p>
+              </div>
+         
+                 <div class="head-bar">
+                    <i class="fa fa-circle-info"></i>
+                    <a href="/account/cart.html"> <i class="fa-solid fa-cart-shopping"></i> </a>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-bell"></i>
+                  </div>    
+           
+         </div>
+   
+         <div class="side-main-menu p-0">
+           <div>
+            <a href="/account/webzolution.html"><i class="fa-sharp fa-solid fa-house active"></i><span>Dashboard</span></a>
+            <a href="/account/products-and-service.html"><i class="fa-solid fa-bars-progress"></i><span>Manage products</span></a>
+            <a href="/account/assets.html"><i class="fa-solid fa-database"></i><span>My assets</span></a>
+            <a href="/account/my-support-ticket.html"><i class="fa-solid fa-envelopes-bulk"></i><span>Support tickets</span></a>
+            <a href="#"><i class="fa-solid fa-building"></i><span>Resources</span></a>
+            <a href="/account/my-info.html"><i class="fa-solid fa-gear"></i><span>My account</span></a>
+       </div>
+          <img src="https://via.placeholder.com/40x190">
+       </div>
+   </section>
+
+
+
+
+
+
+<section class="support-ticket">
+   
+   <div class="inner_wrapper">   
+         <div class="row">
+            
+             <div class="col-lg-3 py-4">
+                <div class="side-head">
+                <h5>Views</h5>
+                <div>
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+            </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-controls="messages">Messages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-controls="settings">Settings</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#ticket-1" role="tab" aria-controls="settings">Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#ticket-2" role="tab" aria-controls="settings">Unsolved-Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#ticket-3" role="tab" aria-controls="settings">Deleted-Tickets</a>
+          </li>
+      </ul>
+    </div>
+      <div class="col-lg-9 py-4">
+      <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel">
+              <div>
+                <div class="side-head">
+                    <h5>Home</h5>
+                    <div>
+                          <span>Action <i class="fa-solid fa-chevron-down"></i> </span> </i>
+                        <span>  Play <i class="fa-solid fa-circle-play"></i></span></i>
+                    </div>
+                </div>
+                <button><i class="fa-solid fa-sort"></i>Filter</button>
+                <h6>First Ticket</h6>
+                <div class="file_table">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Subject</td>
+                        <td>Requester</td>
+                        <td>Requested</td>
+                        <td>Type</td>
+                        <td>Priority</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            Status:Open
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Sample ticket:Meet the ticket</td>
+                        <td>The Customer</td>
+                        <td>Yesterday 20:40</td>
+                        <td>Incident</td>
+                        <td>Normal</td>
+                    </tr>
+                   
+                </table>
+                </div>
+
+              </div>
+        </div>
+        <div class="tab-pane" id="profile" role="tabpanel">
+            <div>
+                <div class="side-head">
+                    <h5>Profile</h5>
+                    <div>
+                          <span>Action <i class="fa-solid fa-chevron-down"></i> </span> </i>
+                        <span>  Play <i class="fa-solid fa-circle-play"></i></span></i>
+                    </div>
+                </div>
+                <button><i class="fa-solid fa-sort"></i>Filter</button>
+                <h6>First Ticket</h6>
+                <div class="file_table">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Subject</td>
+                        <td>Requester</td>
+                        <td>Requested</td>
+                        <td>Type</td>
+                        <td>Priority</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            Status:Open
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Sample ticket:Meet the ticket</td>
+                        <td>The Customer</td>
+                        <td>Yesterday 20:40</td>
+                        <td>Incident</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Sample ticket:Meet the ticket</td>
+                        <td>The Customer</td>
+                        <td>Yesterday 20:40</td>
+                        <td>Incident</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Sample ticket:Meet the ticket</td>
+                        <td>The Customer</td>
+                        <td>Yesterday 20:40</td>
+                        <td>Incident</td>
+                        <td>Normal</td>
+                    </tr>
+                </table>
+                </div>
+
+              </div>
+        </div>
+        <div class="tab-pane" id="messages" role="tabpanel">
+            <div>
+                <div class="side-head">
+                    <h5>Messages</h5>
+                    <div>
+                          <span>Action <i class="fa-solid fa-chevron-down"></i> </span> </i>
+                        <span>  Play <i class="fa-solid fa-circle-play"></i></span></i>
+                    </div>
+                </div>
+                <button><i class="fa-solid fa-sort"></i>Filter</button>
+                <h6>First Ticket</h6>
+                <div class="file_table">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Subject</td>
+                        <td>Requester</td>
+                        <td>Requested</td>
+                        <td>Type</td>
+                        <td>Priority</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            Status:Open
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Sample ticket:Meet the ticket</td>
+                        <td>The Customer</td>
+                        <td>Yesterday 20:40</td>
+                        <td>Incident</td>
+                        <td>Normal</td>
+                    </tr>
+                </table>
+                </div>
+              </div>
+        </div>
+        <div class="tab-pane" id="settings" role="tabpanel">
+            <div>
+                <div class="side-head">
+                    <h5>Settings</h5>
+                    <div>
+                          <span>Action <i class="fa-solid fa-chevron-down"></i> </span> </i>
+                        <span>  Play <i class="fa-solid fa-circle-play"></i></span></i>
+                    </div>
+                </div>
+                <button><i class="fa-solid fa-sort"></i>Filter</button>
+                <h6>First Ticket</h6>
+                <div class="file_table">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Subject</td>
+                        <td>Requester</td>
+                        <td>Requested</td>
+                        <td>Type</td>
+                        <td>Priority</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            Status:Open
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Sample ticket:Meet the ticket</td>
+                        <td>The Customer</td>
+                        <td>Yesterday 20:40</td>
+                        <td>Incident</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Sample ticket:Meet the ticket</td>
+                        <td>The Customer</td>
+                        <td>Yesterday 20:40</td>
+                        <td>Incident</td>
+                        <td>Normal</td>
+                    </tr>
+                </table>
+                </div>
+
+              </div>
+        </div>
+        <div class="tab-pane" id="ticket-1" role="tabpanel"><div>
+            <div class="side-head">
+                <h5>Ticket</h5>
+                <div>
+                      <span>Action <i class="fa-solid fa-chevron-down"></i> </span> </i>
+                    <span>  Play <i class="fa-solid fa-circle-play"></i></span></i>
+                </div>
+            </div>
+            <button><i class="fa-solid fa-sort"></i>Filter</button>
+            <h6>First Ticket</h6>
+            <div class="file_table">
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="vehicle1"></td>
+                    <td>Subject</td>
+                    <td>Requester</td>
+                    <td>Requested</td>
+                    <td>Type</td>
+                    <td>Priority</td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        Status:Open
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="vehicle1"></td>
+                    <td>Sample ticket:Meet the ticket</td>
+                    <td>The Customer</td>
+                    <td>Yesterday 20:40</td>
+                    <td>Incident</td>
+                    <td>Normal</td>
+                </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="ticket-2" role="tabpanel"><div>
+            <div class="side-head">
+                <h5>Resolved-Ticket</h5>
+                <div>
+                      <span>Action <i class="fa-solid fa-chevron-down"></i> </span> </i>
+                    <span>  Play <i class="fa-solid fa-circle-play"></i></span></i>
+                </div>
+            </div>
+            <button><i class="fa-solid fa-sort"></i>Filter</button>
+            <h6>First Ticket</h6>
+            <div class="file_table">
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="vehicle1"></td>
+                    <td>Subject</td>
+                    <td>Requester</td>
+                    <td>Requested</td>
+                    <td>Type</td>
+                    <td>Priority</td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        Status:Open
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="vehicle1"></td>
+                    <td>Sample ticket:Meet the ticket</td>
+                    <td>The Customer</td>
+                    <td>Yesterday 20:40</td>
+                    <td>Incident</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="vehicle1"></td>
+                    <td>Sample ticket:Meet the ticket</td>
+                    <td>The Customer</td>
+                    <td>Yesterday 20:40</td>
+                    <td>Incident</td>
+                    <td>Normal</td>
+                </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="ticket-3" role="tabpanel">
+            <div>
+                <div class="side-head">
+                    <h5>Deleted-ticket</h5>
+                    <div>
+                          <span>Action <i class="fa-solid fa-chevron-down"></i> </span> </i>
+                        <span>  Play <i class="fa-solid fa-circle-play"></i></span></i>
+                    </div>
+                </div>
+                <button><i class="fa-solid fa-sort"></i>Filter</button>
+                <h6>First Ticket</h6>
+                <div class="file_table">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Subject</td>
+                        <td>Requester</td>
+                        <td>Requested</td>
+                        <td>Type</td>
+                        <td>Priority</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            Status:Open
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vehicle1"></td>
+                        <td>Sample ticket:Meet the ticket</td>
+                        <td>The Customer</td>
+                        <td>Yesterday 20:40</td>
+                        <td>Incident</td>
+                        <td>Normal</td>
+                    </tr>
+                </table>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+    </section>
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="../bootstrap/js/bootstrap.min.js">
+        </script>
+
+<script>
+    $(".customer").click(function(){
+      $(".side-main-menu").toggleClass("side-menu-open");
+     });
+    </script>
+
+    </body>
+    </html>

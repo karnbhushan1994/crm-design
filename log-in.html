@@ -1,0 +1,133 @@
+<!doctype html>
+<head>
+ <title>Presentation Design Agency | PowerPoint Design - Slidor</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="css/style.css" rel="stylesheet">
+ <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    body{
+        background: #fff!important;
+    }
+    .log-in-form {
+    width: 40%;
+    display: block;
+    margin: 100px auto;
+    border: 1px solid #000;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.log-in-form input {
+    width: 100%;
+    height: 40px;
+}
+.login-btn a {
+    color:#fff;
+}
+.login-btn {
+    background: #225ed8;
+    color: #fff;
+    border: none;
+    width:100%;
+    height: 40px;
+}
+.form_links {
+    margin-top: 20px;
+    text-align: center;
+}
+@media screen and (max-width:767px) {
+    .log-in-form {
+        width:100%;
+        padding:15px;
+    }
+}
+</style>
+<body>
+
+    <section class="home-header">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light"></nav> -->
+        <div class="container-fluid" style="overflow: visible;overflow-x:clip;">
+           <div class="row align-items-center">
+            
+               <div class="col-lg-2 col-md-2 text-left">
+                   <!-- <img src="https://via.placeholder.com/140x50"> -->
+                   <h5 class="logo-text"> <a href="https://flamboyant-wright.103-15-28-226.plesk.page/homepage.html"> Webzolution </a></h5>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa-solid fa-list"></span>
+                  </button>
+               </div>
+               <div class="col-lg-8 col-md-7 pages collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="main-pages navbar-nav">
+                       <li class="customers nav-item"><a href="#">Customers <i class="fa-solid fa-sort-down"></i></a>
+                           <ul class="sub-pages main">
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/gallary.html">Customers Gallery</a></li>
+                               <li><a href="#">Customer Stories</a></li>
+                           </ul>
+                       </li>
+                       <li class="products nav-item"><a href="#">Products and services <i class="fa-solid fa-sort-down"></i></a>
+                           <ul class="products-sub-pages main">
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/services.html">Extra value starter pack</a></li>
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/unique-website.html">Unique website</a></li>
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/presentation-template-design.html">Branded presentation template</a></li>
+                               <li><a href="#">Virtual Business Card</a></li>
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/NFC-business-card.html">NFC Business Card (coming soon)</a></li>
+                               <li><a href="#">Print Business Card</a></li>
+                               <li><a href="#">Logo design / Brand ID development</a></li>
+                           </ul>
+                       </li>
+                       <li class="about-pages nav-item"><a href="#">About Us <i class="fa-solid fa-sort-down"></i> </a>
+                           <ul class="about-sub-pages main">
+                               <li><a href="#">Why pick us, not others</a></li>
+                               <li><a href="#">Webzolution is not for you if ...</a></li>
+                               <li><a href="#">The company</a></li>
+                           </ul>
+                       </li>
+                       <li class="resources nav-item"><a href="/guides-and-insights.html">Resources <i class="fa-solid fa-sort-down"></i> </a>
+                           <ul class="resources-sub-pages main">
+                               <li><a href="#">FAQs</a></li>
+                               <li><a href="#">Guides and Insights</a></li>
+                            </ul>
+                       </li>
+                   </ul>
+               </div>
+               <div class="col-lg-2 col-md-3 text-right login-button">
+                   <span><a href="#">Log in</a></span>
+                   <button><a href="/start-guide.html">Start for free</a></button>
+               </div>
+            
+           </div>
+        </div>
+    <!-- </nav> -->
+   </section>
+
+
+ <section class="log-in-form">
+    <h2 class="mb-5">Log into Webzolution</h2>
+    <form action="/action_page.php">
+        <label for="fname">Email address</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button class="login-btn"> <a href="https://flamboyant-wright.103-15-28-226.plesk.page/account/my-info.html" > Login </a> </button>
+        <div class="form_links">
+        <a href="#" class="forgot-login">Forgot Password</a> | <a href="#" class="register-login">Register to start</a>
+       </div>
+      </form> 
+ </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <script>
+    $(".customer").click(function(){
+      $(".side-main-menu").toggleClass("side-menu-open");
+     });
+    </script>
+    
+    </body>
+    </html>    

@@ -1,0 +1,211 @@
+<!doctype html>
+<head>
+ <title>Presentation Design Agency | PowerPoint Design - Slidor</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="../css/style.css" rel="stylesheet">
+ <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="sidebar">
+    <aside>
+        <div class="sidebar-brand custom-flex">
+            <a href="https://infysupport.infyom.com" class="pl-2 text-wrap text-break w-75">Webzolution</a>
+            <a href="" class="mobile_close"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="sidebar-brand sidebar-brand-sm">
+            <div class="d-flex justify-content-center align-items-center h-100 w-100">
+                <a href="https://infysupport.infyom.com" class="small-sidebar-text">
+                    W
+                </a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/admin/admin-page.html" class="active_ac"><i class="fa-sharp fa-solid fa-house"></i><span>Dashboard</span></a></li>
+            <li><a href="/admin/all-orders.html"><i class="fa-solid fa-bars-progress"></i><span>Orders</span></a></li>
+            <li><a href="/admin/all-tickets.html"><i class="fa-solid fa-envelopes-bulk"></i><span>Support tickets</span></a></li>
+             <li><a href="/admin/all-users.html"><i class="fa-solid fa-user"></i><span>User</span></a></li>
+           <li><a href="/admin/all-products.html"><i class="fa-solid fa-tag"></i><span>Products</span></a></li>
+            <li><a href="/account/my-info.html"><i class="fa-solid fa-gear"></i><span>My account</span></a></li>
+        </ul>
+    </aside>
+</div>
+
+
+         <nav class="top_nav">
+            
+            <div class="inner">
+                <div class="left"> <i class="fa-solid fa-bars toggle_sidebar"></i></div>
+                <div class="right">
+               <a href=""><i class="fa fa-circle-info"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <span class="dropdown">
+                  <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-bell"></i>
+                    </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">
+                          <span class="">6 Notifications</span> 
+                          <a href="#" id="readAllNotification" class="text-decoration-none">Mark All As Read</a>
+                  </div>
+                  <ul>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <i class="fas fa-ticket"></i>
+                              <p>New Ticket Created. <br/> THANH CAO create ticket Cannot issue VAT billing</p>
+                              <p class="text-right"><small>2 weeks ago</small></p>
+                          </a>
+                      </li>
+                  </ul>
+                  </div>
+              </span>
+            </div>
+        </div>
+        </nav>
+
+
+<section class="body-part main_container">
+ 
+    <div class="container px-0">
+        <div class="box-layout">
+             <div class="form-header mb-4">
+                <h4>Support Tickets</h4>
+                <a href="/admin/new-ticket.html" class="btn btn-primary">Create Ticket</a>
+            </div>
+            <div class="table-controls">
+                <div class="filters">
+                    <input type="text" name="" id="" placeholder="Search Ticket" class="form-control">
+                    <select class="form-control">
+                        <option value="">All</option>
+                        <option value="">Active</option>
+                        <option value="">Closed</option>
+                        <option value="">In Progress</option>
+                    </select>
+                    <select class="form-control">
+                        <option value="" selected disabled>Select Category</option>
+                        <option value="">ABC</option>
+                        <option value="">EFG</option>
+                        <option value="">XYZ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="reponsive-table">
+                <table class="table">
+                 <thead>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <th>Last Updated</th>
+                        <th>Ticket No.</th>
+                        <th>Subject</th>
+                        <th>Created On</th>
+                        <th>Customer Name</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>June 30, 2021</td>
+                        <td>#12</td>
+                        <td>Billing Issue</td>
+                        <td>June 26, 2021</td>
+                        <td>Jhon Doe</td>
+                        <td><span class="status active">In Progress</span></td>
+                        <td class="actions"><a href="/admin/view-ticket.html" class="view"><i class="fa fa-eye"></i></a><a href="/admin/edit-ticket.html" class="edit"><i class="fa fa-edit"></i></a> <a href=""  class="delete"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>June 30, 2021</td>
+                        <td>#13</td>
+                        <td>Billing Issue</td>
+                        <td>June 26, 2021</td>
+                        <td>Jhon Doe</td>
+                        <td><span class="status active">In Progress</span></td>
+                        <td class="actions"><a href="/admin/view-ticket.html" class="view"><i class="fa fa-eye"></i></a><a href="/admin/edit-ticket.html" class="edit"><i class="fa fa-edit"></i></a> <a href=""  class="delete"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>June 30, 2021</td>
+                        <td>#14</td>
+                        <td>Billing Issue</td>
+                        <td>June 26, 2021</td>
+                        <td>Jhon Doe</td>
+                        <td><span class="status inactive">Closed</span></td>
+                        <td class="actions"><a href="/admin/view-ticket.html" class="view"><i class="fa fa-eye"></i></a><a href="/admin/edit-ticket.html" class="edit"><i class="fa fa-edit"></i></a> <a href=""  class="delete"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                    
+                 </tbody>
+                </table>
+            </div>
+            <div class="table_footer">
+                <span class="page_number">Showing <strong>1 of 7</strong></span>
+                <ul class="pagination">
+                    <li><a href="#" class="prev">Previous</a></li>
+                    <li><a href="#" class="current">1</a></li>
+                    <li><a href="#" >2</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#" >10</a></li>
+                    <li><a href="#" class="next">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
+
+<script>
+ $(".toggle_sidebar").click(function(){
+    event.preventDefault();
+  $('body').toggleClass("active");
+});
+
+$(".mobile_close").click(function(){
+    event.preventDefault();
+  $('body').removeClass("active");
+});
+
+</script>
+
+</body>
+</html>

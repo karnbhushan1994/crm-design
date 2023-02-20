@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Presentation Design Agency | PowerPoint Design - Slidor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+       </head>
+
+<style>
+   * { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  background: #fff!important;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: auto;
+  display: block;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 15px;
+  background: #d6d6d6;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.btn:hover {
+  background: #aaa;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background: #f3f3f3;
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #aa96ca;
+}
+
+.button.is-checked {
+  color: white;
+}
+
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+
+/* ---- isotope ---- */
+
+.grid {
+  border: 0;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  padding: 0;
+  background: #888;
+  color: #262524;
+  overflow: hidden;
+}
+.element-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+/* .element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+} */
+
+/* .element-item .city {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .date {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+} */
+
+.element-item.city1          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.city2  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.city3      { background: #FF0; background: hsl(  72, 100%, 50%); }
+
+/* custome */
+
+.filter_section .button-group.filters-button-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 20px;
+}
+.filter_section .button-group.filters-button-group button {
+    margin: 10px;
+    border-radius: 5px;
+}
+.element-item div {
+    padding: 10px;
+}
+
+.element-item div > * {
+    margin: 0;
+}
+section.guide_head {
+    text-align: center;
+    margin-top:55px;
+}
+
+section.guide_head h2 {
+    font-size: 45px;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+.grid {
+  margin-left:75px;
+}
+}
+
+@media screen and (max-width:767px) {
+
+  .filter_section .button-group.filters-button-group button {
+    margin: 4px;
+   white-space: nowrap;
+}
+.filter_section .button-group.filters-button-group {
+  display: block;
+}
+/* .element-item {
+  left: 30px !important;
+} */
+.grid {
+  margin:30px;
+}
+}
+
+
+
+</style>
+
+
+<body>
+    <section class="home-header">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light"></nav> -->
+        <div class="container-fluid" style="overflow: visible;overflow-x:clip;">
+           <div class="row align-items-center">
+            
+               <div class="col-lg-2 col-md-2 text-left">
+                   <!-- <img src="https://via.placeholder.com/140x50"> -->
+                   <h5 class="logo-text"> <a href="https://flamboyant-wright.103-15-28-226.plesk.page/homepage.html"> Webzolution </a></h5>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa-solid fa-list"></span>
+                  </button>
+               </div>
+               <div class="col-lg-8 col-md-7 pages collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="main-pages navbar-nav">
+                       <li class="customers nav-item"><a href="#">Customers <i class="fa-solid fa-sort-down"></i></a>
+                           <ul class="sub-pages main">
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/gallary.html">Customers Gallery</a></li>
+                               <li><a href="#">Customer Stories</a></li>
+                           </ul>
+                       </li>
+                       <li class="products nav-item"><a href="#">Products and services <i class="fa-solid fa-sort-down"></i></a>
+                           <ul class="products-sub-pages main">
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/services.html">Extra value starter pack</a></li>
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/unique-website.html">Unique website</a></li>
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/presentation-template-design.html">Branded presentation template</a></li>
+                               <li><a href="#">Virtual Business Card</a></li>
+                               <li><a href="https://flamboyant-wright.103-15-28-226.plesk.page/NFC-business-card.html">NFC Business Card (coming soon)</a></li>
+                               <li><a href="#">Print Business Card</a></li>
+                               <li><a href="#">Logo design / Brand ID development</a></li>
+                           </ul>
+                       </li>
+                       <li class="about-pages nav-item"><a href="#">About Us <i class="fa-solid fa-sort-down"></i> </a>
+                           <ul class="about-sub-pages main">
+                               <li><a href="#">Why pick us, not others</a></li>
+                               <li><a href="#">Webzolution is not for you if ...</a></li>
+                               <li><a href="#">The company</a></li>
+                           </ul>
+                       </li>
+                       <li class="resources nav-item"><a href="#">Resources <i class="fa-solid fa-sort-down"></i> </a>
+                           <ul class="resources-sub-pages main">
+                               <li><a href="#">FAQs</a></li>
+                               <li><a href="#">Guides and Insights</a></li>
+                            </ul>
+                       </li>
+                   </ul>
+               </div>
+               <div class="col-lg-2 col-md-3 text-right login-button">
+                   <span><a href="/log-in.html">Log in</a></span>
+                   <button><a href="/start-guide.html">Start for free</a></button>
+               </div>
+            
+           </div>
+        </div>
+    <!-- </nav> -->
+   </section>
+
+ 
+   <section class="guide_head">
+    <div class="container">
+         <h2> Guides and insights  </h2>
+     </div>
+  </section>
+
+
+    <!--Start Project Style10 Area-->
+    <section class="filter_section">
+        <div class="wrapper">
+               
+                
+                <div class="button-group filters-button-group">
+                  <button class="button is-checked" data-filter=".branding">Branding</button>
+                  <button class="button" data-filter=".content">Content</button>
+                  <button class="button" data-filter=".online_ad">Online Ad</button>
+                  <button class="button" data-filter=".seo">SEO</button>
+                  <button class="button" data-filter=".website">Website </button>
+               </div>
+                
+                <div class="grid">
+                  <div class="element-item branding" data-category="transition">
+                   <img src="https://via.placeholder.com/300x200">
+                    <div>
+                    <h3 class="name">This is the title of the article</h3>
+                    <p class="city">3 min read</p>
+                  </div>
+                  </div>
+                  <div class="element-item branding" data-category="metalloid">
+                     <img src="https://via.placeholder.com/300x200">
+                      <div>
+                      <h3 class="name">This is the title of the article</h3>
+                      <p class="city">3 min read</p>
+                     </div>
+                  </div>
+                  <div class="element-item branding" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                      <div>
+                      <h3 class="name">This is the title of the article</h3>
+                      <p class="city">3 min read</p>
+                      </div>
+                  </div>
+                  <div class="element-item branding " data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item content" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item content " data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item content" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item online_ad" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item online_ad" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item website" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item seo" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                         </div>
+                  </div>
+                  <div class="element-item seo " data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                         </div>
+                  </div>
+                  <div class="element-item website" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                         </div>
+                  </div>
+                  <div class="element-item website" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item website" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item website" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item website" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item website" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                  <div class="element-item website" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                       </div>
+                  </div>
+                  <div class="element-item website" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div><div class="element-item seo" data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                       </div>
+                  </div>
+                  <div class="element-item seo " data-category="post-transition">
+                    <img src="https://via.placeholder.com/300x200">
+                    <div>
+                        <h3 class="name">This is the title of the article</h3>
+                        <p class="city">3 min read</p>
+                        </div>
+                  </div>
+                
+                
+                </div><!-- /wrapper -->
+        
+    </section>
+    <!--End Project Style10 Area-->
+
+
+   <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" ></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+   <script>
+   // external js: isotope.pkgd.js
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows',
+  filter: '.branding'
+});
+// filter functions
+var filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function() {
+    var name = $(this).find('.name').text();
+    return name.match( /ium$/ );
+  }
+};
+// bind filter button click
+$('.filters-button-group').on( 'click', 'button', function() {
+  var filterValue = $( this ).attr('data-filter');
+  // use filterFn if matches value
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
+});
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+
+
+   </script>
+
+
+</body>
+</html>
